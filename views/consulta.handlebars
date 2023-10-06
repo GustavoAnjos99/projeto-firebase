@@ -3,7 +3,7 @@
         <div class="col-1">
             &nbsp;
         </div>
-        <div class="col bg-primary">
+        <div class="col bg-primary rounded-bottom">
             <nav class="navbar bg-primary navbar-expand-lg" data-bs-theme="dark">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#">SISTEMA WEB</a>
@@ -15,7 +15,7 @@
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div class="navbar-nav">
                             <a class="nav-link active" aria-current="page" href="/">Cadastrar</a>
-                            <a class="nav-link" href="/consulta">Consultar</a>
+                            <a class="nav-link active" href="/consulta">Consultar</a>
                         </div>
                     </div>
                 </div>
@@ -45,7 +45,7 @@
             <p class="text-start fs-6">Sistema Utilizado para agendamento de serviços.</p>
             <p>
             <div class="container text-center">
-                <div class="row bg-primary">
+                <div class="row bg-primary rounded-pill">
                     <div class="col text-light">
                         Nome
                     </div>
@@ -86,7 +86,7 @@
                     </div>
                 </div>
                 {{#each post}}
-                <div class="row">
+                <div class="row rounded-pill shadow-sm p-3 mb-5 rounded ">
                     <div class="col">
                         {{nome}}
                     </div>
@@ -102,9 +102,9 @@
                     <div class="col">
                         {{observacao}}
                     </div>
-                    <div class="col">
-                        <button type="button" class="btn btn-primary"><a href="/editar/{{id}}" style="color:inherit">Editar</a></button><br/>
-                        <button type="button" class="btn btn-primary"><a href="/excluir/{{id}}" style="color:inherit">Excluir</a></button>
+                    <div class="col position-relative">
+                        <button type="button" class="btn btn-primary rounded-pill"><a href="/editar/{{id}}" style="color:inherit">Editar</a></button>
+                        <button type="button" class="btn btn-danger rounded-pill"><a href="/excluir/{{id}}" style="color:inherit">Excluir</a></button>
                     </div>
                 </div>
                 {{/each}}
